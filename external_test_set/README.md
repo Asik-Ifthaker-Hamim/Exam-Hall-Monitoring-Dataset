@@ -22,6 +22,14 @@ performance.
 > (`normal-y93p`); the real classes are id `1` `invigilator`, id `2` `normal`,
 > id `3` `suspicious_moving`.
 
+## Annotation & quality
+
+Images were annotated in **Roboflow** with the same format and the same three-class
+guidelines as the [detection dataset](../detection_dataset/) (a bounding box per
+person, labelled `invigilator` / `normal` / `suspicious_moving`). Annotation
+reliability for this protocol was verified on the detection dataset with Cohen's
+Kappa (κ = 0.739, substantial agreement); see that dataset's README for details.
+
 ## Why the priors differ on purpose
 
 This set has a deliberately different class distribution from the training data — a

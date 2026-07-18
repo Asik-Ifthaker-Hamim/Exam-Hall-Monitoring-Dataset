@@ -74,6 +74,11 @@ known caveats. In short:
 - **External test set** — held out for detector evaluation only, with a deliberately
   different class prior as a robustness check.
 
+**Annotation quality.** Labels were checked for reliability with Cohen's Kappa
+between two independent annotators: **κ = 0.739** (substantial) on the detection
+data and **κ = 0.832** (almost-perfect) on the frame-classification data. See each
+dataset's README for the mechanism and full figures.
+
 ## Repository layout
 
 ```

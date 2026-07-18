@@ -20,6 +20,24 @@ carries one binary label describing whether the scene contains suspicious activi
 > ~7,771 frames from 35 recordings; the small difference is due to a few very short
 > edge recordings). The figures above reflect exactly what ships in the release.
 
+## Annotation & quality
+
+Frame labels were assigned **manually in-house** (the binary scene task needs no
+bounding boxes): each recording was reviewed end-to-end by visual inspection and its
+frames labelled `normal` (all students seated and calm) or `suspicious` (otherwise).
+Every frame also keeps a `recording_id` group id (see below) to support leakage-free
+splitting.
+
+**Inter-annotator agreement.** Reliability was measured with Cohen's Kappa,
+κ = (P_o − P_e) / (1 − P_e), where P_o is the observed agreement between two
+annotators and P_e is the agreement expected by chance. A random subset of **200
+frames** was independently re-labelled into `normal`/`suspicious` by a second
+annotator following the same guidelines:
+
+| Observed (P_o) | Expected (P_e) | Cohen's κ | Interpretation (Landis & Koch) |
+|:--:|:--:|:--:|:--|
+| 0.920 | 0.522 | **0.832** | Almost-perfect agreement |
+
 ## Layout after download
 
 The images use the standard **ImageFolder** convention — the parent directory name
