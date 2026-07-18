@@ -1,0 +1,45 @@
+name: Data removal / privacy request
+description: Request removal of content, or raise a privacy or ethical concern.
+title: "[Removal] "
+labels: ["privacy", "removal-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reaching out. This dataset contains images of identifiable
+        people, and we take removal and privacy requests seriously. Reasonable
+        requests are honoured promptly.
+
+        **Please do not post anyone's name, student ID, or other personal details in
+        this public issue.** Describe the request in general terms; we will follow up
+        privately for any identifying details.
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the request
+      options:
+        - I appear in the data
+        - I represent someone who appears in the data
+        - Institution / authority
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What are you requesting?
+      description: Describe the concern or removal request without including personal identifiers.
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Private contact (optional)
+      description: An email where we can reach you to verify details privately.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included anyone's personal identifiers in this public issue.
+          required: true

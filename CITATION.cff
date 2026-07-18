@@ -11,18 +11,23 @@ authors:
   - family-names: Hamim
     given-names: A. M. Asik Ifthaker
     affiliation: International Islamic University Chittagong
+    orcid: "https://orcid.org/0009-0006-6361-6277"
   - family-names: Mohaimin
     given-names: Abdul
     affiliation: International Islamic University Chittagong
+    orcid: "https://orcid.org/0009-0004-5405-1951"
   - family-names: Ishmum
     given-names: Al Fahim
     affiliation: International Islamic University Chittagong
+    orcid: "https://orcid.org/0009-0006-2429-0948"
   - family-names: As-ad
     given-names: Jamil
     affiliation: International Islamic University Chittagong  # Co-supervisor
+    orcid: "https://orcid.org/0009-0002-0348-789X"
   - family-names: Khaliluzzaman
     given-names: Md.
     affiliation: International Islamic University Chittagong  # Supervisor
+    orcid: "https://orcid.org/0000-0001-6846-1610"
 doi: "10.5281/zenodo.21432043"
 references:
   - type: thesis
@@ -34,13 +39,18 @@ references:
     authors:
       - family-names: Hamim
         given-names: A. M. Asik Ifthaker
+        orcid: "https://orcid.org/0009-0006-6361-6277"
       - family-names: Mohaimin
         given-names: Abdul
+        orcid: "https://orcid.org/0009-0004-5405-1951"
       - family-names: Ishmum
         given-names: Al Fahim
+        orcid: "https://orcid.org/0009-0006-2429-0948"
       - family-names: As-ad
         given-names: Jamil
+        orcid: "https://orcid.org/0009-0002-0348-789X"
       - family-names: Khaliluzzaman
         given-names: Md.
+        orcid: "https://orcid.org/0000-0001-6846-1610"
     institution:
       name: International Islamic University Chittagong (IIUC)

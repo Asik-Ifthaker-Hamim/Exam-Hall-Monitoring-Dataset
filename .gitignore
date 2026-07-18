@@ -9,8 +9,10 @@ frame_classification_dataset/suspicious/
 external_test_set/images/
 external_test_set/test/
 
-# Downloaded archives
+# Downloaded archives (and the split parts of the large frame archive, e.g.
+# frame_classification_images.zip.001) that download_data.py fetches at runtime.
 *.zip
+*.zip.[0-9][0-9][0-9]
 *.tar
 *.tar.gz
 

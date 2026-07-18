@@ -1,6 +1,15 @@
-SHA-256 checksums for the Zenodo image archives.
-Verify a download with:  sha256sum -c CHECKSUMS.txt
+SHA-256 checksums for the Zenodo files.
+Verify downloaded parts with:  sha256sum -c CHECKSUMS.txt
 
+# --- Files uploaded to Zenodo ---
 c887a3fe9650b6a977cb00f37277dece5604e10013574e17cbac8bdfff25abb9  detection_dataset_images.zip
 28c5f55f1823542d84767b0d4f04bd135d40754b24e011425ee87428c16a09d8  external_test_set_images.zip
-dcb392d01b7aad99dfa63d394c049f599fd9b254052a92c9bc74e4df4dbc4e53  frame_classification_images.zip
+c538332ab975a1796be81cb5c57302211f11c64e34c728ae04a7f162052d26d8  frame_classification_images.zip.001
+c230be3db6bcec6beab6080eb3aa54b5f9d3115c4a5462f56595938afd5dacb2  frame_classification_images.zip.002
+31884e6dac028f2d8402196a5deccaf4652242a8f8dcdbcbf1d26dfe78d75885  frame_classification_images.zip.003
+a186ee3309f8cebcabaa30d8ee854108dada5ff14640f2d8cae6880406ff12af  frame_classification_images.zip.004
+c868cd122b085431c20342074c0b432bb45a63516026264e87f998df176460ba  frame_classification_images.zip.005
+
+# --- Reassembled full frame archive (the 5 parts concatenated in order) ---
+# download_data.py verifies this after reassembly:
+# dcb392d01b7aad99dfa63d394c049f599fd9b254052a92c9bc74e4df4dbc4e53  frame_classification_images.zip

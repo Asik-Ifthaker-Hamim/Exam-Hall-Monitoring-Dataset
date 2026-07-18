@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the ethics & consent statement first
+    url: https://github.com/Asik-Ifthaker-Hamim/Exam-Hall-Monitoring-Dataset/blob/main/ETHICS_AND_CONSENT.md
+    about: Acceptable-use terms and how privacy/removal requests are handled.

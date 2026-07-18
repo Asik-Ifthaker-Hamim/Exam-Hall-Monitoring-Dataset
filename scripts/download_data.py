@@ -49,6 +49,11 @@ DATASETS = {
         "filename": "frame_classification_images.zip",
         "sha256": "dcb392d01b7aad99dfa63d394c049f599fd9b254052a92c9bc74e4df4dbc4e53",
         "extract_to": REPO_ROOT,
+        # The 8.5 GB archive is uploaded to Zenodo in parts (too large for the
+        # browser uploader as a single file). The parts are named
+        # frame_classification_images.zip.001 ... .00N and are concatenated back
+        # into the single zip before checksum verification.
+        "parts": 5,
     },
     "external_test": {
         "filename": "external_test_set_images.zip",
@@ -98,10 +103,30 @@ def fetch(name: str, keep_archive: bool) -> None:
     archive = dest_dir / cfg["filename"]
 
     print(f"[{name}] -> {dest_dir}")
-    if not archive.exists():
-        download(zenodo_url(cfg["filename"]), archive)
-    else:
+    if archive.exists():
         print(f"  using cached {archive.name}")
+    elif cfg.get("parts"):
+        # Download each part and concatenate them back into the single archive.
+        n = cfg["parts"]
+        part_paths = []
+        for i in range(1, n + 1):
+            part_name = f"{cfg['filename']}.{i:03d}"
+            part_path = dest_dir / part_name
+            if not part_path.exists():
+                print(f"  part {i}/{n}")
+                download(zenodo_url(part_name), part_path)
+            part_paths.append(part_path)
+        print(f"  reassembling {n} parts -> {archive.name}")
+        with archive.open("wb") as out:
+            for p in part_paths:
+                with p.open("rb") as f:
+                    for block in iter(lambda: f.read(1 << 20), b""):
+                        out.write(block)
+        if not keep_archive:
+            for p in part_paths:
+                p.unlink(missing_ok=True)
+    else:
+        download(zenodo_url(cfg["filename"]), archive)
 
     expected = cfg["sha256"]
     if expected:

@@ -1,0 +1,29 @@
+name: Dataset question or issue
+description: Ask about the data, annotations, splits, or report a problem (e.g. a label error).
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: dropdown
+    id: dataset
+    attributes:
+      label: Which dataset?
+      options:
+        - detection_dataset
+        - frame_classification_dataset
+        - external_test_set
+        - Repository / scripts
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Your question, or the problem you found (include file names / IDs where relevant).
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment (if reporting a script issue)
+      description: OS, Python version, and the command you ran.
