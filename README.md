@@ -186,12 +186,13 @@ Please cite **both** the dataset and the thesis. Ready-to-use entries are in
 [`CITATION.bib`](CITATION.bib) (BibTeX) and [`CITATION.cff`](CITATION.cff)
 (GitHub's *Cite this repository*).
 
-```
-Hamim, A. M. A. I., Mohaimin, A., Ishmum, A. F., As-ad, J., & Khaliluzzaman, M.
-(2026). Exam-Hall Monitoring Dataset: Detection, Frame-Classification, and External
-Test Sets for Automated Examination-Hall Suspicious-Behaviour Monitoring
-[Data set]. Zenodo. https://doi.org/10.5281/zenodo.21432043
-```
+<p align="justify">
+Hamim, A. M. A. I., Mohaimin, A., Ishmum, A. F., As-ad, J., &amp; Khaliluzzaman, M.
+(2026). <em>Exam-Hall Monitoring Dataset: Detection, Frame-Classification, and
+External Test Sets for Automated Examination-Hall Suspicious-Behaviour
+Monitoring</em> [Data set]. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21432043">https://doi.org/10.5281/zenodo.21432043</a>
+</p>
 
 ## Authors
 
