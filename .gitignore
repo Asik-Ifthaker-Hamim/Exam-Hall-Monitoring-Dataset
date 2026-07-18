@@ -1,0 +1,23 @@
+# Image data is hosted on Zenodo, not in Git. Ignore any locally downloaded/
+# extracted images so they are never accidentally committed.
+detection_dataset/images/
+detection_dataset/train/
+detection_dataset/valid/
+detection_dataset/test/
+frame_classification_dataset/normal/
+frame_classification_dataset/suspicious/
+external_test_set/images/
+external_test_set/test/
+
+# Downloaded archives
+*.zip
+*.tar
+*.tar.gz
+
+# Python / tooling
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+Thumbs.db

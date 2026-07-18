@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite both the dataset and the accompanying thesis."
+title: >-
+  Exam-Hall Monitoring Dataset: Detection, Frame-Classification, and External
+  Test Sets for Automated Examination-Hall Suspicious-Behaviour Monitoring
+type: dataset
+version: 1.0.0
+date-released: "2026-07-04"
+license: CC-BY-4.0
+authors:
+  - family-names: Hamim
+    given-names: A. M. Asik Ifthaker
+    affiliation: International Islamic University Chittagong
+  - family-names: Mohaimin
+    given-names: Abdul
+    affiliation: International Islamic University Chittagong
+  - family-names: Ishmum
+    given-names: Al Fahim
+    affiliation: International Islamic University Chittagong
+  - family-names: As-ad
+    given-names: Jamil
+    affiliation: International Islamic University Chittagong  # Co-supervisor
+  - family-names: Khaliluzzaman
+    given-names: Md.
+    affiliation: International Islamic University Chittagong  # Supervisor
+doi: "10.5281/zenodo.21432043"
+references:
+  - type: thesis
+    title: >-
+      A Dual-Stream YOLO Cascade with Attention-Guided Lightweight Frame
+      Classification for Real-Time Suspicious Behavior Detection in Examination
+      Halls
+    year: 2026
+    authors:
+      - family-names: Hamim
+        given-names: A. M. Asik Ifthaker
+      - family-names: Mohaimin
+        given-names: Abdul
+      - family-names: Ishmum
+        given-names: Al Fahim
+      - family-names: As-ad
+        given-names: Jamil
+      - family-names: Khaliluzzaman
+        given-names: Md.
+    institution:
+      name: International Islamic University Chittagong (IIUC)

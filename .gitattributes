@@ -1,0 +1,15 @@
+# The image files are NOT stored in Git (they live on Zenodo), so no Git LFS is
+# required for a normal clone. If you ever choose to vendor a small sample of
+# images into the repo, uncomment the lines below to route them through Git LFS.
+#
+# *.jpg filter=lfs diff=lfs merge=lfs -text
+# *.jpeg filter=lfs diff=lfs merge=lfs -text
+# *.png filter=lfs diff=lfs merge=lfs -text
+
+# Normalise line endings for text assets committed to the repo.
+*.md   text
+*.json text
+*.csv  text
+*.py   text
+*.cff  text
+*.bib  text
