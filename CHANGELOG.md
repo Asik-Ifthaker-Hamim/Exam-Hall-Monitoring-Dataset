@@ -4,7 +4,7 @@ All notable changes to this dataset release are documented here. The format foll
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions correspond to
 the Zenodo record versions.
 
-## [1.0.0] — 2026-07
+## [1.0.0] — 2026-07-04
 
 Initial release.
 

@@ -33,16 +33,16 @@ Usage
 Edit the SOURCE_* paths below to point at your raw data before running.
 
 Note: `frame_classification_images.zip` (~8.5 GB) is uploaded to Zenodo split into
-~1.9 GB parts, because the browser uploader is unreliable with very large single
+~500 MB parts, because the browser uploader is unreliable with very large single
 files. After building, split it with:
 
-    split -b 1900m --numeric-suffixes=1 --suffix-length=3 \\
+    split -b 500m --numeric-suffixes=1 --suffix-length=3 \\
         frame_classification_images.zip frame_classification_images.zip.
 
 or the portable Python equivalent:
 
     python - <<'PY'
-    src = "frame_classification_images.zip"; part = 1900 * 1024 * 1024
+    src = "frame_classification_images.zip"; part = 500 * 1024 * 1024
     with open(src, "rb") as f:
         i = 1
         while (chunk := f.read(part)):

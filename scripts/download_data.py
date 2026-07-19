@@ -12,12 +12,6 @@ Usage
     python scripts/download_data.py detection external_test
 
 Only the Python standard library is used, so no `pip install` is needed.
-
-Maintainer TODO
----------------
-Fill in ZENODO_RECORD_ID and, for each dataset, the exact `filename` and `sha256`
-of the archive you uploaded to Zenodo. Until then the script will print the values
-it expects and exit.
 """
 from __future__ import annotations
 
@@ -51,9 +45,9 @@ DATASETS = {
         "extract_to": REPO_ROOT,
         # The 8.5 GB archive is uploaded to Zenodo in parts (too large for the
         # browser uploader as a single file). The parts are named
-        # frame_classification_images.zip.001 ... .00N and are concatenated back
-        # into the single zip before checksum verification.
-        "parts": 5,
+        # frame_classification_images.zip.001 ... .0NN (~500 MB each) and are
+        # concatenated back into the single zip before checksum verification.
+        "parts": 18,
     },
     "external_test": {
         "filename": "external_test_set_images.zip",
@@ -89,15 +83,6 @@ def download(url: str, dest: Path) -> None:
 
 def fetch(name: str, keep_archive: bool) -> None:
     cfg = DATASETS[name]
-    if ZENODO_RECORD_ID == "XXXXXXX":
-        print(
-            f"[{name}] Zenodo record not configured yet.\n"
-            f"        Expected archive: {cfg['filename']}\n"
-            f"        Extract to      : {cfg['extract_to']}\n"
-            f"        Set ZENODO_RECORD_ID (and the sha256) at the top of this script."
-        )
-        return
-
     dest_dir: Path = cfg["extract_to"]
     dest_dir.mkdir(parents=True, exist_ok=True)
     archive = dest_dir / cfg["filename"]
