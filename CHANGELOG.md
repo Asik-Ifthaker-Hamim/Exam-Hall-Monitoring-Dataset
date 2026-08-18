@@ -21,7 +21,7 @@ Initial release.
 - `scripts/download_data.py` (fetch + verify from Zenodo) and
   `scripts/build_release.py` (rebuild renamed images + labels).
 - Images archived on Zenodo under DOI
-  [10.5281/zenodo.21432043](https://doi.org/10.5281/zenodo.21432043) (embargoed until
-  publication).
+  [10.5281/zenodo.21432043](https://doi.org/10.5281/zenodo.21432043) (openly
+  available).
 
 [1.0.0]: https://doi.org/10.5281/zenodo.21432043

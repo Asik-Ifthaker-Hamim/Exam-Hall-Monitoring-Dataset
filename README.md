@@ -16,11 +16,6 @@ International Islamic University Chittagong, 2026.
 
 </div>
 
-> [!IMPORTANT]
-> **Embargoed until publication.** This dataset is private until the associated
-> paper is published. The images are under embargo on Zenodo; please do not
-> redistribute the data or download links before the public release.
-
 > [!WARNING]
 > **Human-subjects data.** These images show identifiable people, recorded in real
 > examination halls with informed consent. Read
@@ -125,9 +120,9 @@ python scripts/download_data.py frame_classification   # or one at a time
 ```
 
 > [!NOTE]
-> The images are embargoed on Zenodo until the paper is published; the download
-> script will only succeed once the files are open. No extra dependencies are
-> required — the script uses only the Python standard library.
+> No extra dependencies are required — the script uses only the Python standard
+> library. The ~8.5 GB frame-classification archive is stored on Zenodo as 18 parts;
+> the script downloads, reassembles, and checksums them for you.
 
 ## Quick start
 
